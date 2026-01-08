@@ -1,0 +1,17 @@
+{
+    "name": "Gooby Arena",
+    "short_name": "Gooby Arena",
+    "description": "Fast-paced multiplayer battle game",
+    "start_url": "/",
+    "display": "fullscreen",
+    "background_color": "#0f172a",
+    "theme_color": "#0f172a",
+    "orientation": "landscape-primary",
+    "icons": [
+        {
+            "src": "/favicon.ico",
+            "sizes": "any",
+            "type": "image/x-icon"
+        }
+    ]
+}

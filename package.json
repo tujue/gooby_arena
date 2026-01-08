@@ -1,0 +1,22 @@
+{
+  "name": "gooby_arena",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "server": "node server.js",
+    "client": "vite --host",
+    "dev": "echo 'Please run \"npm run server\" in one terminal and \"npm run client\" in another.'",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.2.1",
+    "peerjs": "^1.5.5",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1",
+    "vite": "^5.4.21"
+  },
+  "description": "Gooby Arena - P2P Multiplayer Battle Game (Local/LAN Support)"
+}

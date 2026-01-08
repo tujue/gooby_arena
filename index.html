@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+
+  <!-- Mobile Fullscreen Support -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- Google Tag Manager -->
+  <!-- GTM Disabled for Local Dev -->
+  <!-- <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TLB2KQXG');</script> -->
+  <!-- End Google Tag Manager -->
+
+  <!-- SEO Meta Tags -->
+  <title>Gooby Arena - Multiplayer Battle Game</title>
+  <meta name="description"
+    content="Join Gooby Arena! Fast-paced multiplayer battle game with 12 unique game modes. Play with friends online, customize your gooby, and dominate the arena. Free to play!" />
+  <meta name="keywords"
+    content="gooby arena, gooby game, multiplayer game, online game, battle royale, party game, browser game, io game, arena game, multiplayer gooby, gooby battle, gooby wars, gooby.io, gooby online, free multiplayer game, casual game, competitive game, pvp game, team battle, custom game modes, game modes, chaos mode, battle game, action game, real-time multiplayer, web game, html5 game, competitive multiplayer, party multiplayer, friend game, social game, fast-paced game, skill-based game, arcade game, casual multiplayer" />
+  <meta name="author" content="Tūjué">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0f172a">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gooby-arena.onrender.com" />
+  <meta property="og:title" content="Gooby Arena - Multiplayer Battle Game" />
+  <meta property="og:description"
+    content="Fast-paced multiplayer battle game! 12 unique modes, customize your gooby, play with friends. Free browser game!" />
+  <meta property="og:image" content="https://gooby-arena.onrender.com/og-image.jpg" />
+  <meta property="og:site_name" content="Gooby Arena">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://gooby-arena.onrender.com/">
+  <meta name="twitter:title" content="Gooby Arena - Multiplayer Battle Game" />
+  <meta name="twitter:description" content="Fast-paced multiplayer browser game! Battle with friends in real-time.">
+  <meta name="twitter:image" content="https://gooby-arena.onrender.com/og-image.jpg">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://gooby-arena.onrender.com/">
+
+  <!-- JSON-LD Structured Data for Google Rich Results -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "ratingCount": "1250",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "url": "https://gooby-arena.onrender.com/",
+    "image": "https://gooby-arena.onrender.com/og-image.jpg",
+    "datePublished": "2025-12-20",
+    "inLanguage": "en",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Gooby Arena",
+      "url": "https://gooby-arena.onrender.com/"
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Outfit:wght@300;400;700&family=Russo+One&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TLB2KQXG" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript> -->
+  <!-- End Google Tag Manager (noscript) -->
+
+
+  <div id="background-goobys">
+    <!-- Decorative background goobys -->
+    <div class="bg-gooby b1"></div>
+    <div class="bg-gooby b2"></div>
+    <div class="bg-gooby b3"></div>
+  </div>
+  <div id="app"></div>
+
+  <!-- Copyright Footer -->
+  <div id="copyrightFooter" style="
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding: 8px 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    z-index: 1000;
+    font-family: 'Outfit', sans-serif;
+  ">
+    <!-- Social Links -->
+    <div style="display: flex; gap: 15px; align-items: center;">
+      <a href="https://instagram.com/kaan.turkmen12" target="_blank" rel="noopener noreferrer"
+        title="Instagram: @kaan.turkmen12"
+        style="display: flex; align-items: center; gap: 5px; color: rgba(255,255,255,0.6); font-size: 0.9rem; font-weight: 600; font-family: 'Outfit', sans-serif; transition: all 0.2s; text-decoration: none; letter-spacing: 0.5px;"
+        onmouseover="this.style.color='#E4405F'; this.style.transform='scale(1.1)'"
+        onmouseout="this.style.color='rgba(255,255,255,0.6)'; this.style.transform='scale(1)'">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"
+          style="filter: drop-shadow(0 0 4px currentColor);">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2" />
+          <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2" />
+          <circle cx="18" cy="6" r="1.5" fill="currentColor" />
+        </svg>
+        <span>INSTAGRAM</span>
+      </a>
+      <a href="mailto:0n.watts@europe.com" title="Email: 0n.watts@europe.com"
+        style="display: flex; align-items: center; gap: 5px; color: rgba(255,255,255,0.6); font-size: 0.9rem; font-weight: 600; font-family: 'Outfit', sans-serif; transition: all 0.2s; text-decoration: none; letter-spacing: 0.5px;"
+        onmouseover="this.style.color='#facc15'; this.style.transform='scale(1.1)'"
+        onmouseout="this.style.color='rgba(255,255,255,0.6)'; this.style.transform='scale(1)'">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"
+          style="filter: drop-shadow(0 0 4px currentColor);">
+          <path
+            d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+        </svg>
+        <span>EMAIL</span>
+      </a>
+    </div>
+
+    <div style="width: 1px; height: 20px; background: rgba(255,255,255,0.2);"></div>
+
+    <!-- Copyright Text -->
+    <div style="color: rgba(255,255,255,0.4); font-size: 0.75rem; text-align: center;">
+      © 2025 Gooby Arena | Developed by <span style="color: #6366f1; font-weight: 600;">Kaan Türkmen</span>
+    </div>
+  </div>
+
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

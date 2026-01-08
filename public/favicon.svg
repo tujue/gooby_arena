@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Background Circle -->
+  <circle cx="50" cy="50" r="48" fill="#6366f1" stroke="#fff" stroke-width="3"/>
+  
+  <!-- Gooby Face -->
+  <!-- Eyes -->
+  <circle cx="35" cy="40" r="6" fill="#000"/>
+  <circle cx="65" cy="40" r="6" fill="#000"/>
+  
+  <!-- Smile -->
+  <path d="M 30 60 Q 50 70 70 60" stroke="#000" stroke-width="4" fill="none" stroke-linecap="round"/>
+  
+  <!-- Crown (Champion) -->
+  <path d="M 30 15 L 35 25 L 40 15 L 45 25 L 50 10 L 55 25 L 60 15 L 65 25 L 70 15 L 68 30 L 32 30 Z" fill="#facc15" stroke="#f59e0b" stroke-width="1"/>
+</svg>
