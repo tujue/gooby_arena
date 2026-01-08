@@ -10,14 +10,25 @@
 *   **Physics Combat:** Dash, bump, and explode your friends!
 *   **P2P Networking:** Direct browser-to-browser connection relative to host.
 *   **LAN Support:** Play with friends on the same Wi-Fi network.
-*   **Multiple Modes:** Battle Royale, Soccer, and more (in development).
+*   **Modes:** Hot Potato, Soccer, Battle Royale.
+
+## 🎮 Controls
+
+| Action | Input |
+| :--- | :--- |
+| **Move** | Mouse Cursor |
+| **Dash / Attack** | Space or Right Click |
+| **Pass Bomb (Potato)** | E Key |
+| **Deploy Decoy** | X Key |
+| **Emote** | T Key |
+| **Chat** | Enter |
 
 ## 🚀 Setup & Run
 
 To play the game, you need to run both the **Signaling Server** (for finding players) and the **Game Client**.
 
 ### 1. Install Dependencies
-Open standard terminal in project folder:
+Open standard terminal in project folder (**Execute once**):
 ```bash
 npm install
 ```
