@@ -359,27 +359,23 @@ export class GoobyGame {
                 const msg = isHost ? "WARNING: You are the HOST. This will end the game for everyone. Quit?" : "Return to Main Menu?";
 
                 if (confirm(msg)) {
-                    // Proper network cleanup
-                    if (window.networkManager) {
-                        if (isHost) {
-                            // Broadcast quit notification
-                            if (typeof window.networkManager.broadcast === 'function') {
-                                window.networkManager.broadcast({ type: 'HOST_QUIT' });
-                            }
-                        }
-                        // Leave session (works for both host and client)
-                        if (typeof window.networkManager.leaveSession === 'function') {
-                            window.networkManager.leaveSession();
+                    // 1. Notify Network (If Host)
+                    if (window.networkManager && isHost) {
+                        // Broadcast quit notification immediately
+                        if (typeof window.networkManager.broadcast === 'function') {
+                            window.networkManager.broadcast({ type: 'HOST_QUIT' });
                         }
                     }
 
-                    if (typeof this.destroy === 'function') this.destroy();
-                    else if (typeof this.stop === 'function') this.stop();
+                    // 2. Clear Game State
+                    if (this.audio) this.audio.stopMusic();
+                    this.isRunning = false;
 
-                    window.history.replaceState({}, document.title, window.location.pathname);
-
-                    if (window.renderMainMenu) window.renderMainMenu();
-                    else window.location.reload();
+                    // 3. Force Refresh (Cleanest Exit)
+                    // Small delay to ensure network message goes out
+                    setTimeout(() => {
+                        window.location.reload();
+                    }, 100);
                 }
             };
 
