@@ -60,4 +60,4 @@ npm run client
 *   **Build:** Vite
 
 ---
-*Created for Chaos.* 🍄
+*Developed by Kaan Turkmen* 🍄
