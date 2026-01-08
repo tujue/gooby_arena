@@ -2,15 +2,25 @@
 
 **Gooby Arena** is a fast-paced, physics-based multiplayer battle game played directly in your browser. It uses **P2P (Peer-to-Peer)** technology for low-latency combat.
 
+![Gameplay Screenshot](public/gameplay.png)
+
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 ![Node](https://img.shields.io/badge/Node.js-v16+-blue.svg)
 ![P2P](https://img.shields.io/badge/Tech-PeerJS_%2B_Socket.io-purple.svg)
 
-## 🔥 Features
-*   **Physics Combat:** Dash, bump, and explode your friends!
-*   **P2P Networking:** Direct browser-to-browser connection relative to host.
-*   **LAN Support:** Play with friends on the same Wi-Fi network.
-*   **Modes:** Hot Potato, Soccer, Battle Royale.
+## 🔥 Game Modes & Features
+Gooby Arena features **10+ Chaotic Game Modes**:
+*   **🏟️ Classic Arena:** The standard brawl. Push enemies out!
+*   **⚽ Soccer:** Team-based physics soccer with goals.
+*   **🕳️ Void Mode:** A massive black hole in the center pulls everyone in.
+*   **🌌 Chaos Mode:** Low gravity space battle with random events.
+*   **🍬 Candy Collector:** Collect the most candies to win.
+*   **📏 Size Change:** Players grow and shrink dynamically.
+*   **💣 Hot Potato:** Pass the bomb before it explodes!
+*   **⚡ Power Mode:** Super speed and knockback.
+*   **❄️ Slippery Ground:** Ice physics enabled. Drift masters only!
+*   **⛈️ Storm Mode:** Lightning strikes random locations. Dodge or fry!
+*   **🎯 Target Practice:** Hit the moving targets for points.
 
 ## 🎮 Controls
 
